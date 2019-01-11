@@ -258,11 +258,11 @@ public class AntPlugin extends AbstractJavaPlugin {
         try {
 
             PrintStream stdOut = new PrintStream(buildLog);
-            if (errorLog.exists() {
+            if (errorLog.exists()) {
                 PrintStream stdErr = new PrintStream(errorLog);
                 logger.setErrorPrintStream(stdErr);
             }
-            
+
             logger.setOutputPrintStream(stdOut);
             logger.setMessageOutputLevel(Project.MSG_INFO);
 
